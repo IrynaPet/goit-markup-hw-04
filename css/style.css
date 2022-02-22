@@ -1,0 +1,285 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-color: #757575;
+    --white-color: #fff;
+    --accent-color: #2196f3;
+    --beige-color: #f5f4fa;
+    --dark-color: #2f303a;
+}
+/* Стилистика шапки */
+.contacts-link .icon:focus,
+.nav-links-link:focus,
+.contacts-link .icon:hover,
+.nav-links-link:hover {
+    color: var(--accent-color);
+}
+
+.icon{
+margin-right: 10px;
+}
+
+/* Стилистика лого */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-right: 93px;
+}
+
+.logo-studio {
+    color: var(--white-color);
+}
+.logo-studio-title {
+    color: var(--primary-text-color);
+}
+
+/* Стилистика общего наполнения */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+.body-title {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+address{
+    font-family: font-family: 'Roboto', sans-serif;;
+}
+.section {
+    padding: 94px 0;
+}
+.title{
+    margin-bottom: 30px;
+}
+
+.section-desc{
+    padding-bottom: 0;
+}
+
+/* Стилистика героя */
+.section-title {
+    background: var(--dark-color);
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url(../images/hero_photo.jpg);
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+.section-title h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+/* Стилистика кнопки */
+
+.butoon-main:hover,
+.butoon-main:focus {
+    background-color: #188ce8;
+}
+.butoon-main {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+margin: 0 auto;
+display: block;
+line-height: calc(30/16);
+
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px;
+    padding: 0 15px;
+}
+.conteiner-heading{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    padding: 60px 0;
+    background-color: var(--dark-color);
+}
+.conteiner-heading-item:not(:nth-child(4n)){
+    margin-right: 30px;
+   
+}
+.conteiner-info{
+    display: flex;
+    flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.conteiner-heading-item-img{
+    margin-right: 30px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.conteiner-info{
+    display: flex;
+    flex-basis: calc((100% - 4 * 30px) / 4);
+}
+/*
+.conteiner-heading-item:not(:nth-child(-n+4)){
+    margin-bottom: 30px;
+}*/
+.subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+h2 {
+    color: var(--primary-text-color);
+    font-size: 18px;
+}
+p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+.comand{
+    background-color: #F5F4FA;
+}
+.section-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.address-footer {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+.address{
+    margin-bottom: 9px;
+}
+.contacts-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+    
+.page-nav,
+.contacts,
+.nav-links,
+.header-conteiner {
+    display: flex;
+}
+
+.page-nav {
+    align-items: center;}
+
+.header-conteiner {
+    justify-content: space-between;
+}
+
+
+.nav-links-item + .nav-links-item {
+    margin-left: 50px;
+}
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+.contacts-link,
+.nav-links-link {
+    padding: 31px 0;
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.contacts-link {
+    color: var(--secondary-color);
+}
+/* Стилистика кнопок портфолио */
+.button-portfolio {
+    padding: 6px 22px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.section-btn{
+    padding-top: 94px;
+    display: flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+.section-btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+.section-img{
+    padding-top: 34px;
+    padding-bottom: 94px;
+    display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  
+}
+.conteiner-img {
+border: 1px solid #EEEEEE;
+margin-bottom: 30px;
+}
+/*не могу разобраться с размерами футера и героя*/
+.icon{
+margin-right: 10px;
+}
+.header-box{
+    border: 1px solid #ECECEC;
+    border-top: none;
+  border-left: none;
+  border-right: none;
+ 
+  
+}
+.img-title {
+    padding: 30px 0;
+    text-align: center;
+}
