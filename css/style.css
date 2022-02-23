@@ -62,7 +62,7 @@ address{
 
 /* Стилистика героя */
 .section-title {
-    background: var(--dark-color);
+   background: var(--dark-color);
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -117,9 +117,39 @@ line-height: calc(30/16);
     padding: 60px 0;
     background-color: var(--dark-color);
 }
-.conteiner-heading-item:not(:nth-child(4n)){
+.section-img:not(:nth-child(3n)){
     margin-right: 30px;
    
+}
+.conteiner-heading-item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.icon-antenna::before{
+    background-image: url(../images/antenna.svg);
+    background-size: 70px;
+}
+
+
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+    background-size: 70px;
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+    background-size: 70px;
+}
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
+    background-size: 70px;
 }
 .conteiner-info{
     display: flex;
@@ -136,8 +166,8 @@ border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 4 * 30px) / 4);
 }
 /*
-.conteiner-heading-item:not(:nth-child(-n+4)){
-    margin-bottom: 30px;
+.conteiner-heading-item:not(:nth-child(n+4)){
+   margin-right: 30px;
 }*/
 .subtitle {
     font-weight: 500;
@@ -145,8 +175,26 @@ border-radius: 0px 0px 4px 4px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-right: 30px;
 }
+.lead:not(:nth-child(4n)){
+    margin-right: 30px;
+
+}
+.partner-list{
+    display: flex;
+}
+.partner{
+   
+    border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+width: 170px;
+height: 92px;
+margin-right: 30px;
+}
+
 h2 {
     color: var(--primary-text-color);
     font-size: 18px;
@@ -213,6 +261,29 @@ p {
 .contacts-item:not(:last-child) {
     margin-right: 50px;
 }
+.contacts-item::before{
+    display: block;
+    content: "";
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.icon-phone{
+    background-image: url(../images/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    margin-right: 10px;
+background-position: 0% 50%;;
+}
+.icon-email{
+background-image: url(../images/email.svg);
+background-repeat: no-repeat;
+background-size: 12px;
+margin-right: 10px;
+background-position: 0% 50%;;
+}
+
 .contacts-link,
 .nav-links-link {
     padding: 31px 0;
