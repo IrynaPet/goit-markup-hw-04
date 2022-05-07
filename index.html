@@ -31,7 +31,9 @@
                     >
                     <ul class="nav-links">
                         <li class="nav-links-item">
-                            <a class="nav-links-link" href="./index.html"
+                            <a
+                                class="nav-links-link current"
+                                href="./index.html"
                                 >Студия</a
                             >
                         </li>
@@ -62,7 +64,7 @@
                     </li>
                     <li class="contacts-item icon-phone">
                         <a href="tel:+380961111111" class="contacts-link">
-                            <svg class="contact-icon" width="10" height="12">
+                            <svg class="contact-icon" width="10" height="16">
                                 <use
                                     href="./images/icons/symbol-defs-1.svg#icon-phone"
                                 ></use>
@@ -81,7 +83,11 @@
                         ЭФФЕКТИВНОЕ РЕШЕНИЕ<br />
                         ДЛЯ ВАШЕГО БИЗНЕСА
                     </h1>
-                    <button type="button" class="butoon-main btn-main">
+                    <button
+                        type="button"
+                        class="butoon-main btn-main"
+                        data-modal-open
+                    >
                         Заказать услугу
                     </button>
                 </div>
@@ -126,29 +132,36 @@
                 <h2 class="section-text">Чем мы занимаемся</h2>
                 <div class="conteiner">
                     <ul class="conteiner-heading">
-                        <li class="section-img">
+                        <li class="pictures-block">
                             <img
+                                class="pic"
                                 src="./images/photo1.jpg"
                                 alt="пример1"
                                 width="370"
                                 height="294"
                             />
+                            <p class="pic-text">Десктопные приложения</p>
                         </li>
-                        <li class="section-img">
+
+                        <li class="pictures-block">
                             <img
+                                class="pic"
                                 src="./images/photo2.jpg"
                                 alt="пример2"
                                 width="370"
                                 height="294"
                             />
+                            <p class="pic-text">Мобильные приложения</p>
                         </li>
-                        <li class="section-img">
+                        <li class="pictures-block">
                             <img
+                                class="pic"
                                 src="./images/photo3.jpg"
                                 alt="пример3"
                                 width="370"
                                 height="294"
                             />
+                            <p class="pic-text">Дизайнерские приложения</p>
                         </li>
                     </ul>
                 </div>
@@ -594,7 +607,74 @@
                         </li>
                     </ul>
                 </div>
+                                 <div class="footer-mailing">
+                    <b class="footer-join">Подпишитесь на рассылку</b>
+                    <div class="mailing-block">
+                        <label class="footer-label">
+                            <input class="footer-input" name="email" type="email" placeholder="E-mail">
+                        </label>
+                        <div class="footer-subscribe">
+                            <button class="button-send btn-subscribe" type="submit">Подписаться
+                                <svg class="icon-subscribe" width="24" height="24">
+                                <use href="./images/icons/symbol-defs-1.svg#icon-send"></use>
+                            </svg></button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </footer>
+
+        <div class="modal is-hidden" data-modal>
+            <div class="modal-content">
+                <button class="btn-modal-close" type="submit" data-modal-close>
+                    <svg class="icon-close" width="11" height="11">
+                        <use href="./images/icons/symbol-defs-1.svg#icon-close" ></use>
+                    </svg>
+                </button>
+                    <form class="form" autocomplete="off">
+                        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                        <label class="form-contacts">
+                            <input type="text" name="name" class="form-input">
+                            <span class="text">Имя</span>
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons/symbol-defs-1.svg#icon-person"></use>
+                            </svg>
+                        </label>
+                        <label class="form-contacts">
+                            <input type="number" name="tel-number" class="form-input">
+                            <span class="text">Телефон</span>
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons/symbol-defs-1.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                        <label class="form-contacts">
+                            <input type="email" name="email" class="form-input">
+                            <span class="text">Почта</span>
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons/symbol-defs-1.svg#icon-email"></use>
+                            </svg>
+                        </label>
+                        <label class="form-comments">
+                            <span class="text">Комментарии</span>
+                            <textarea class="com-input" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+                        </label>
+                        <label class="form-contacts">
+                            <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+                            <span class="icon-checkbox"></span>
+                            <span class="agreement">Соглашаюсь с рассылкой и принимаю <span class="contract">Условия договора</span></span>
+                            
+                        </label>
+                        <div class="form-button">
+                            <button class="button-send" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                        
+            </div>
+        </div>
+
+        <script src="./modal.js"></script>
     </body>
 </html>
